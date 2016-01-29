@@ -105,18 +105,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Application name -->
           <div class="middle middle-container">
-            <div class="app-name">Gume blog</div>
+            <div class="app-name">{{pageTitle}}</div>
           </div>
 
           <!-- Application sub title -->
           <div class="bottom bottom-container">
-            <div class="bottom-title">Blog của sự đam mê</div>
+            <div class="bottom-title">{{pageTitleDetail}}</div>
           </div>
         </paper-toolbar>
 
         <!-- Main Content -->
         <div class="content">
-          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+          <iron-pages attr-for-selected="data-route" selected="{{route}}" on-iron-select="pageSelected">
             <section data-route="home">
               <paper-material elevation="1">
                 <my-greeting></my-greeting>

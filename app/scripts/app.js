@@ -80,4 +80,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     app.$.paperDrawerPanel.closeDrawer();
   };
 
+  // Define app properties
+  app.properties = {
+    pageTitle: {
+      type: String,
+      value: 'Gume blog'
+    },
+    pageTitleDetail: {
+      type: String,
+      value: 'Blog của sự đam mê'
+    }
+  };
+
+  app.pageSelected = function(e) {
+    var page = app.route;
+    switch (page) {
+      case 'users':
+        app.set('pageTitle', 'Gume user');
+        app.set('pageTitleDetail', 'User of Gume blog');
+        break;
+      case 'contact':
+        app.set('pageTitle', 'Gume contact');
+        app.set('pageTitleDetail', 'Contact of Gume blog');
+        break;
+      default:        
+        app.set('pageTitle', 'Gume blog');
+        app.set('pageTitleDetail', 'Blog của sự đam mê');
+    }
+  };
+
 })(document);
