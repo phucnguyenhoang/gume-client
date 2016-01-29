@@ -30,7 +30,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     --secondary-text-color: #737373;
     --disabled-text-color: #9b9b9b;
     --divider-color: #dbdbdb;
-    --primary-color: #3f51b5;
+    --primary-color: #1B5E20;
     --light-primary-color: #c5cae9;
     --dark-primary-color: #303f9f;
     --accent-color: #ff4081;
@@ -66,10 +66,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     border-bottom: var(--drawer-toolbar-border-color);
   }
 
-  #drawerToolbar .menu-name {
-    @apply(--paper-font-title);
-  }
-
   paper-scroll-header-panel {
     height: 100%;
   }
@@ -103,6 +99,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     line-height: 24px;
     min-height: 48px;
     padding: 0 16px;
+  }
+
+  #mainToolbar {
+    --paper-toolbar-color: var(--drawer-menu-color);
   }
 
   #mainToolbar.tall .app-name {

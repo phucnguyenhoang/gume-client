@@ -1,0 +1,32 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="main-logo">
+  <template>
+    <style>
+      :host {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
+      img {
+        height: 80%;
+        margin-top: 5px;
+      }
+    </style>
+
+    <a href="/">
+      <img src="../../images/full-logo.png" title="Gume logo" alt="Gume logo">
+    </a>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'main-logo'
+      });
+    })();
+  </script>
+</dom-module>
